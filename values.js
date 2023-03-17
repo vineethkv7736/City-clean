@@ -1,2 +1,1 @@
-//fetch('https://city-clean.postman.co/').then(res => console.log(res)) 
-console.log('hello')
+fetch('https://regres.in/api/users').then(res => console.log(res)) 
