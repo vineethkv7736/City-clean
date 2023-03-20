@@ -140,8 +140,35 @@
   
 
 </body>
+<script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-database.js"></script> 
 <script>
-  
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCZNvUxiaSJXCcdyCLnZGXhR6UERc7xMqQ",
+  authDomain: "clean-city-f6747.firebaseapp.com",
+  databaseURL: "https://clean-city-f6747-default-rtdb.firebaseio.com",
+  projectId: "clean-city-f6747",
+  storageBucket: "clean-city-f6747.appspot.com",
+  messagingSenderId: "684108210843",
+  appId: "1:684108210843:web:1e8d651e75e9cee7e45c3e",
+  measurementId: "G-S3Z9DDK1V4"
+};
+const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+
+
+var ref = firebase.database().ref();
+
+ref.on("level", function(snapshot) {
+   console.log(snapshot.val());
+}, function (error) {
+   console.log("Error: " + error.code);
+});
+
 var gauge = new JustGage({
             id: "gauge", // the id of the html element
             value: 50,
@@ -151,11 +178,11 @@ var gauge = new JustGage({
             gaugeWidthScale: 0.6
         });
 
-// update the value randomly
+//update the value randomly
 setInterval(() => {
-  gauge.refresh(Math.random() * 100);
-}, 5000)
-
+    gauge.refresh(data);
+}, 1000)
+var data=23;
 </script>
 
 </html>
