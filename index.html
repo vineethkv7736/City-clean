@@ -142,7 +142,8 @@
 </body>
 <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-database.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-database.js"></script>
+  
 <script>
 
 
@@ -164,7 +165,7 @@ const app = initializeApp(firebaseConfig);
 var ref = firebase.database().ref();
 
 ref.on("level", function(snapshot) {
-   console.log(snapshot.val());
+  var data =snapshot.val();
 }, function (error) {
    console.log("Error: " + error.code);
 });
@@ -182,7 +183,7 @@ var gauge = new JustGage({
 setInterval(() => {
     gauge.refresh(data);
 }, 1000)
-var data=23;
+
 </script>
 
 </html>
