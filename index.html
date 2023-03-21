@@ -33,12 +33,6 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Presento - v3.9.1
-  * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -46,14 +40,15 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
-      <h1 class="logo me-auto"><a href="index.html">City Clean</a></h1>
+      <h1 class="logo me-auto col-lg-3 col-8"><a href="index.html">City Clean</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>-->
 
       <nav id="navbar" class="navbar order-last order-lg-0 mx-auto">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero"><h3>Home</h3></a></li>
-          <li><a class="nav-link scrollto" href="#about"><h3>Status</h3></a></li>
+          <li><a class="nav-link scrollto" href="#status"><h3>Status</h3></a></li>
+          <li><a class="nav-link scrollto" href="#about"><h3>About</h3></a></li>
           <li><a class="nav-link scrollto" href="https://providence.edu.in/"><h3>College</h3></a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -73,7 +68,7 @@
         <div class="col-xl-6 col-lg-8 col-12">
           <h1>Automated Waste Management System</h1>
           <h2>"Our System Enables You <br>to Determine the Garbage level <br>of Your Dustbin in No Time"</h2>
-          <a href="#about" class="btn-get-started scrollto">Wastebin Status</a>
+          <a href="#status" class="btn-get-started scrollto">Wastebin Status</a>
         </div>
       </div>
     </div>
@@ -85,7 +80,7 @@
    
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about section-bg">
+    <section id="status" class="about section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="row no-gutters">
@@ -93,20 +88,8 @@
             <div class="content">
               <h3><i class="bi bi-trash"></i>Wastebin Status</h3>
               <hr>
-              <div class="mx-auto"> 
-                <iframe width="400" height="260" style="border: 1px solid #000000;" src="https:///thingspeak.com/channels/1961421/widgets/561941"></iframe>
-              </div>    
-              <h3 class="mt-3">Progress Gauge</h3>
-              <hr>
-              <div class="col-lg-6" id="gauge"></div>   
-              <hr>
-              <div class="mt-5 container">
-                <h3 class="text-light">Progress bar</h3><div class="progress">
-                  <hr>
-                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-                </div>
-              </div>   
-                
+              <div class="col-lg-12 col-12 gauge-size" id="gauge"></div>   
+              <hr>     
             </div>
             <div class="content col-lg-12 col-xl-12 col-12 d-flex align-items-stretch">
                        
@@ -119,6 +102,37 @@
 
       </div>
     </section><!-- End About Section -->
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about section-bg">
+          <div class="container" data-aos="fade-up">
+    
+            <div class="row no-gutters">
+              <div class="content col-xl-12">
+                <div class="content container border-about">
+                  <div class="p-4">
+                 <h1 class="text-danger" style="font-family: serif;">ABOUT</h1>
+                 <br>
+                 <p class="why-font">
+                     Our system combines both hardware and 
+software components to accurately determine the amount of waste inside.This system eliminates the need for manual inspection of bins, 
+reducing the risk of exposure to hazardous waste materials for waste collectors. Additionally, the 
+system can track and segregate waste patterns over time, allowing for more efficient waste 
+management practices. Overall, this system provides a cost-effective and environmentally friendly 
+solution for waste identification and management.
+                 </p>
+                </div>
+                <div class="content col-lg-12 col-xl-12 col-12 d-flex align-items-stretch">
+                           
+                  </div>
+                </div>
+              </div>
+             
+              </div>
+            </div>
+    
+          </div>
+        </section><!-- End About Section -->
 
     
 
