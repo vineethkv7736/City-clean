@@ -16,11 +16,11 @@ body {
   width: 23%;
   height: 23%;
   float: right;
-  position: relative;
-
-  
-  
-  
+  position: relative; 
+}
+.gauge-size{
+  width: auto;
+  height: 9cm;
 }
 
 a {
@@ -109,13 +109,14 @@ h6 {
 
 
 #header .logo {
-  font-size: 50px;
+  font-size: 40px;
   margin: 0;
   padding: 0;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   position: relative;
 }
+
 
 #header .logo a {
   color: #111111;
@@ -127,6 +128,15 @@ h6 {
 
 #header .logo img {
   max-height: 30px;
+}
+.why-font{
+  font-size: 6mm;
+  font-family: serif;
+}
+.border-about{
+  border: 1px solid;
+  border-color: #eee;
+  border-spacing: 5cm;
 }
 
 /*--------------------------------------------------------------
