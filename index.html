@@ -141,8 +141,31 @@
 
 </body>
 
-  
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
 <script>
+
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyCZNvUxiaSJXCcdyCLnZGXhR6UERc7xMqQ",
+  authDomain: "clean-city-f6747.firebaseapp.com",
+  databaseURL: "https://clean-city-f6747-default-rtdb.firebaseio.com",
+  projectId: "clean-city-f6747",
+  storageBucket: "clean-city-f6747.appspot.com",
+  messagingSenderId: "684108210843",
+  appId: "1:684108210843:web:1e8d651e75e9cee7e45c3e",
+  measurementId: "G-S3Z9DDK1V4"
+};
+firebase.initializeApp(config);
+var database = firebase.database();
+database.ref('/').on('value', (snapshot) => {
+  // Get the data from the snapshot
+  const data = snapshot.val();
+  console.log(data);  
+}, (error) => {
+  // Handle any errors
+  console.error(error);
+});
+
 
 var gauge = new JustGage({
             id: "gauge", // the id of the html element
