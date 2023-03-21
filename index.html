@@ -143,7 +143,7 @@
 
 <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
 <script>
-
+let data
 // Initialize Firebase
 var config = {
   apiKey: "AIzaSyCZNvUxiaSJXCcdyCLnZGXhR6UERc7xMqQ",
@@ -157,10 +157,11 @@ var config = {
 };
 firebase.initializeApp(config);
 var database = firebase.database();
-database.ref('/').on('value', (snapshot) => {
+let v
+database.ref('/level').on('value', (snapshot) => {
   // Get the data from the snapshot
-  const data = snapshot.val();
-  console.log(data);  
+   v = snapshot.val();
+  console.log(v);  
 }, (error) => {
   // Handle any errors
   console.error(error);
@@ -178,7 +179,7 @@ var gauge = new JustGage({
 
 //update the value randomly
 setInterval(() => {
-    gauge.refresh(Math.random()*100);
+    gauge.refresh(v);
 }, 1000)
 
 </script>
