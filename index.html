@@ -187,6 +187,11 @@
   database.ref('/level').on('value', (snapshot) => {
     // Get the data from the snapshot
     v = snapshot.val();
+    if(v<0){
+      v=0;
+    }else if(v>75){
+      v=100;
+    }
     console.log(v);
   }, (error) => {
     // Handle any errors
